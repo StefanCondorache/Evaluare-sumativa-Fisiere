@@ -7,7 +7,7 @@ with open('desktop/REZERVA.txt','w') as f:
 for i in list1:
     list2=i.split()
     x=list2[0]+' '+list2[1]+' '+list2[2]
-    media=str(float(list2[3])+float(list2[4])+float(list2[5])/3)
+    media=str((float(list2[3])+float(list2[4])+float(list2[5]))/3)
     y=x+' '+media+'\n'
     with open('desktop/OUTPUT.txt','a') as f:
         f.write(y)
